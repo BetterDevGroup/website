@@ -1,1 +1,1 @@
-![screencapture-localhost-3000-2023-06-17-18_27_01](https://github.com/sunil9813/Creative-Agency-UI-Next-JS-/assets/67497228/04546138-7cbb-40b0-8710-ce5fed29643b)
+![screencapture-localhost-3000-2024-12-29-12_00_00](https://github.com/BetterDevGroup/website/blob/main/assets/images/landing.webp?raw=true)
