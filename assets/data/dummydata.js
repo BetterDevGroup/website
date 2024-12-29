@@ -504,14 +504,144 @@ export const expertise = [
   {
     id: 4,
     title: "E-Commerce",
+    subtitle: "From sleek storefronts to seamless shopping experiences, we build e-commerce platforms designed to convert visitors into loyal customers.",
     slug: "e-commerce",
     cover: "../images/ecommerce.webp",
     desc: [
-      { text: "E-Commerce website design" },
       { text: "WooCommerce" },
-      { text: "Content management" },
-      { text: "Hosting" },
+      { text: "Shopify" },
     ],
+    body: (
+      <>
+        <SubTitleSm title="About Our Website Services" />
+        <p className="desc-p">
+          Your website is your digital storefront—it’s often the first
+          impression your audience has of your brand. At DEVELOP Better, we
+          specialize in crafting stunning, user-friendly websites designed to
+          engage visitors and drive results.
+        </p>
+        <p className="desc-p">
+          Whether you need a portfolio, e-commerce platform, or corporate
+          website, our team blends creativity with cutting-edge technology to
+          bring your vision to life.
+        </p>
+        <div className="what-we-offer py">
+          <div className="image">
+            <img
+              src="../images/services/websites.webp"
+              width="100%"
+              height="100%"
+              className="round bg-cover"
+            />
+          </div>
+          <div className="list">
+            <ul>
+              <li>
+                <SubTitleSm title="What We Offer" />
+              </li>
+              <li>
+                <strong>Custom Website Design</strong> Unique designs that
+                reflect your brand and stand out from the crowd.
+              </li>
+              <li>
+                <strong>Responsive Development</strong> Websites that look and
+                perform perfectly on any device.
+              </li>
+              <li>
+                <strong>E-Commerce Solutions</strong> Feature-rich online stores
+                to grow your business and increase sales.
+              </li>
+              <li>
+                <strong>SEO Optimization</strong> Built-in SEO features to help
+                your website rank higher on search engines.
+              </li>
+              <li>
+                <strong>Content Management Systems (CMS)</strong> Easy-to-manage
+                websites with platforms like WordPress, Shopify, or custom-built
+                solutions.
+              </li>
+              <li>
+                <strong>Performance Optimization</strong> Fast-loading, secure
+                websites for a seamless user experience.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="why-choose-us py">
+          <SubTitleSm title="Why Choose Us?" />
+          <ul>
+            <li className="box">
+              <span className="box2">
+                <strong>Tailored to Your Needs</strong> Every website is custom-made to align with your brand and business goals.
+              </span>
+            </li>
+            <li className="box">
+              <span className="box2">
+                <strong>Cutting-Edge Technology</strong> We leverage the latest tools and frameworks for exceptional performance and scalability.
+              </span>
+            </li>
+            <li className="box">
+              <span className="box2">
+                <strong>Focus on User Experience</strong> Designed with your audience in mind, ensuring intuitive navigation and engagement.
+              </span>
+            </li>
+            <li className="box">
+              <span className="box2">
+                <strong>Transparent Process</strong> From concept to launch, we keep you informed every step of the way.
+              </span>
+            </li>
+            <li className="box">
+              <span className="box2">
+                <strong>Proven Results</strong> Our websites not only look great but deliver measurable business impact.
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div className="abstract_bg">
+          <img
+            src="../images/services/abstract_bg.webp"
+            width="100%"
+            height="100%"
+            className=""
+          />
+        </div>
+        <div className="our-process py">
+          <SubTitleSm title="Our Process" />
+          <ul>
+            <li className="box" data-step="1">
+              <span className="box2">
+                <strong>Discovery & Goal Setting</strong> We take the time to
+                understand your business, audience, and goals.
+              </span>
+            </li>
+            <li className="box" data-step="2">
+              <span className="box2">
+                <strong>Strategy Development</strong> We craft a tailored
+                digital marketing plan to achieve your objectives.
+              </span>
+            </li>
+            <li className="box" data-step="3">
+              <span className="box2">
+                <strong>Campaign Execution</strong> From ad placements to
+                content creation, we bring your strategy to life.
+              </span>
+            </li>
+            <li className="box" data-step="4">
+              <span className="box2">
+                <strong>Monitoring & Optimization</strong> We continuously
+                refine campaigns for better results.
+              </span>
+            </li>
+            <li className="box" data-step="5">
+              <span className="box2">
+                <strong>Reporting & Insights</strong> Detailed reports highlight
+                what’s working and where we’re heading.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </>
+    ),
   },
   {
     id: 5,
