@@ -15,16 +15,18 @@ header {
   }
 }
 .activeLink {
-  position: relative;
-  color: $green;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: $green;
+  &:not(.button-primary){
+    position: relative;
+    color: $green;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 48px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $green;
+    }
   }
 }
 
@@ -59,5 +61,10 @@ header {
     &::after {
       display: none;
     }
+  }
+}
+@media screen and (min-width: 768px) {
+  .show-on-mobile {
+    display: none;
   }
 }

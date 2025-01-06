@@ -19,7 +19,7 @@ export const Title = ({ title, className }) => {
 
 export const SimpleLogo = () => {
   return (
-    <img src="/images/logo_develop_better.svg" height="30px" className="mt-4" />
+    <img src="/images/logo_develop_better.svg" height="30px"  />
   );
 };
 
