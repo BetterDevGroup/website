@@ -1,4 +1,5 @@
 import { Title, TitleSm } from "@/components/common/Title"
+import Link from "next/link"
 import React from "react"
 import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
 import { BiUserCircle } from "react-icons/bi"
@@ -21,28 +22,30 @@ const Contact = () => {
               <div className='contact-deatils'>
                 <div className='box'>
                   <FiHeadphones size={30} className='icons' />
-                  <h3>1-001-234-5678</h3>
-                  <span>Call us: Mon - Fri 9:00 - 19:00</span>
+                  <h3>+212-699-826-223</h3>
+                  <span>Call us: Mon - Fri 9:00 - 18:00</span>
                 </div>
                 <div className='box'>
                   <IoLocationOutline size={30} className='icons' />
-                  <h3>New York</h3>
-                  <span>990 Madison Ave, Midtown Manhattan, 2th Floor, NY 10022</span>
+                  <h3>Casablanca, Morocco</h3>
+                  <span>17 Rue Paul Doumer, Dar-el-Beida</span>
                 </div>
                 <div className='box'>
                   <FiHelpCircle size={30} className='icons' />
-                  <h3>info@dream-theme.com</h3>
+                  <h3>contact@develop-better.org</h3>
                   <span>Drop us a line anytime!</span>
                 </div>
                 <div className='box'>
                   <BiUserCircle size={30} className='icons' />
-                  <h3>hr@dream-theme.com</h3>
-                  <span>Career at Seven Creative</span>
+                  <h3>hr@develop-better.org</h3>
+                  <span>Career at Develop Better</span>
                 </div>
               </div>
               <ul>
                 <li className='icon'>
-                  <BsFacebook size={25} />
+                  <Link href="https://www.facebook.com/people/Develop-Better/61571702786567/" target="_blank">
+                    <BsFacebook size={25} />
+                  </Link>
                 </li>
                 <li className='icon'>
                   <AiFillBehanceCircle size={25} />
