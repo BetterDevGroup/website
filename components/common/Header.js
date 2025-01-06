@@ -17,7 +17,7 @@ const Header = () => {
     <>
       <header>
         <div className='container'>
-          <div className='logo mt-1'>
+          <div className='logo mt-5px py-5px'>
             <Link href='/'>
               <SimpleLogo />
             </Link>
@@ -29,24 +29,27 @@ const Header = () => {
             <Link href='/agency' className={activeLink == "/agency" ? "activeLink" : "none"}>
               Agency
             </Link>
-            <Link href='/team' className={activeLink == "/team" ? "activeLink" : "none"}>
+            {/* <Link href='/team' className={activeLink == "/team" ? "activeLink" : "none"}>
               Team
-            </Link>
+            </Link> */}
             <Link href='/services' className={activeLink == "/services" ? "activeLink" : "none"}>
               Services
             </Link>
-            <Link href='/showcase' className={activeLink == "/showcase" ? "activeLink" : "none"}>
+            {/* <Link href='/showcase' className={activeLink == "/showcase" ? "activeLink" : "none"}>
               Showcase
-            </Link>
-            <Link href='/blogs' className={activeLink == "/blogs" ? "activeLink" : "none"}>
+            </Link> */}
+            {/* <Link href='/blogs' className={activeLink == "/blogs" ? "activeLink" : "none"}>
               Blog
-            </Link>
-            <Link href='/contact' className={activeLink == "/contact" ? "activeLink" : "none"}>
+            </Link> */}
+            {/* <Link href='/contact' className={activeLink == "/contact" ? "activeLink" : "none"}>
               Contact
+            </Link> */}
+            <Link href='/contact' className={`${activeLink == "/contact" ? "activeLink" : "none"} button-primary`}>
+              book a consultation
             </Link>
-            <button className='button-primary'>book a consultation</button>
+            {/* <button className='button-primary'>book a consultation</button> */}
           </nav>
-          <button onClick={() => setOpen(!open)}>{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button>
+          <button className="show-on-mobile" onClick={() => setOpen(!open)}>{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button>
         </div>
       </header>
     </>
