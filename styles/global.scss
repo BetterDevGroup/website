@@ -252,9 +252,14 @@
 
 //brand
 .brand-content {
+  @include flex(center, space-between, none);
   img {
     opacity: 0.5;
     transition: 0.5s ease-in-out;
+    width: auto;
+    height: auto;
+    max-width: 160px;
+    max-height: 70px;
     &:hover {
       opacity: 1;
       cursor: pointer;
@@ -307,12 +312,8 @@ footer {
       color: $green;
     }
   }
-  .connect {
+  .social-media {
     @include flex(center, space-between, none);
-    span {
-      font-size: $sm;
-      letter-spacing: 2px;
-    }
   }
   &::after {
     content: "";
@@ -361,6 +362,9 @@ footer {
     .misson-p {
       border-left: 5px solid $indigo;
       padding-left: $xl-5;
+      font-size: 16px;
+      font-weight: 300;
+      color: rgba($white, 0.7);
     }
   }
 }
@@ -536,14 +540,15 @@ footer {
     flex-wrap: wrap;
     li {
       text-align: left;
-      padding: 0px 10px;
+      padding: 15px 20px;
       cursor: default;
-      width: calc(50% - 20px);
+      width: 100%;
       font-weight: 200;
       strong {
         display: block;
         margin-bottom: 20px;
         text-align: left;
+        font-size: 40px;
       }
     }
   }
@@ -551,7 +556,7 @@ footer {
     position: relative;
     &:before{
       content: attr(data-step);
-      font-size: 70px;
+      font-size: 150px;
       font-weight: 900;
       border-radius: 40px;
       color: $green;
@@ -573,7 +578,9 @@ footer {
     background: rgba(white, .03);
     backdrop-filter: blur(10px);
     border-radius: 50px 0 50px 0;
-    padding: 20px;
+    padding: 50px;
+    font-size: 30px;
+    font-weight: 100;
     position: relative;
     z-index: 2;
     display: block;
