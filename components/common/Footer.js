@@ -1,15 +1,20 @@
-import Link from "next/link"
-import { FullLogo, TitleLogo } from "./Title"
-import { BsFacebook } from "react-icons/bs"
-import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
+import Link from "next/link";
+import { FullLogo, TitleLogo } from "./Title";
+import { BsFacebook } from "react-icons/bs";
+import {
+  AiFillBehanceCircle,
+  AiFillInstagram,
+  AiFillLinkedin,
+} from "react-icons/ai";
+import { expertise } from "@/assets/data/dummydata";
 
 const Footer = () => {
   return (
     <>
       <footer>
-        <div className='container'>
-          <div className='grid-4'>
-            <div className='logo'>
+        <div className="container">
+          <div className="grid-4">
+            <div className="logo">
               <FullLogo />
               <br />
               <span>
@@ -17,86 +22,95 @@ const Footer = () => {
               </span>
               <br />
               <br />
-              <h3>+1 001 234 5678</h3>
+              <h3>+212 699 826 223</h3>
               <br />
-              <button className='button-primary'>Request for quote</button>
+              <Link href="/contact">
+                <button className="button-primary">Request for quote</button>
+              </Link>
             </div>
             <ul>
               <h3>COMPANY</h3>
               <li>
-                <Link href='/'>About agency</Link>
+                <Link href="/">About agency</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href='/'>Our team</Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link href='/'>Showcase</Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link href='/'>Blog</Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link href='/'>Demo design system</Link>
-              </li>
+              </li> */}
               <li>
-                <Link href='/'>Contact</Link>
+                <Link href="/">Contact</Link>
               </li>
             </ul>
             <ul>
               <h3>SERVICES</h3>
-              <li>
-                <Link href='/'>Web Design & Development</Link>
-              </li>
-              <li>
-                <Link href='/'>Branding & Creative Services</Link>
-              </li>
-              <li>
-                <Link href='/'>Digital Marketing</Link>
-              </li>
-              <li>
-                <Link href='/'>E-Commerce</Link>
-              </li>
+              {expertise.map((service) => (
+                <li key={service.slug}>
+                  <Link href={`/services/${service.slug}`}>
+                    {service.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
-            <ul>
+            <div className="connect">
               <h3>CONNECT</h3>
-              <div className='connect'>
+              <ul className="social-media">
                 <li>
-                  <Link href='https://www.facebook.com/develop-better'>
+                  <Link
+                    href="https://www.facebook.com/people/Develop-Better/61571702786567/"
+                    target="_blank"
+                  >
                     <BsFacebook size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link
+                    href="https://www.behance.net/develop-better"
+                    target="_blank"
+                  >
                     <AiFillBehanceCircle size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link
+                    href="https://www.instagram.com/developbetterofficiel/"
+                    target="_blank"
+                  >
                     <AiFillInstagram size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link
+                    href="https://www.linkedin.com/company/develop-better"
+                    target="_blank"
+                  >
                     <AiFillLinkedin size={25} />
                   </Link>
                 </li>
-              </div>
-            </ul>
-          </div>
-          <div className='legal connect py'>
-            <div className='text'>
-              <span>© 2023 DEVELOP BETTER. ALL RIGHTS RESERVED.</span>
+              </ul>
             </div>
-            <div className='connect'>
-              <Link href='/about'>Bdev Group COMPANY</Link>
+          </div>
+          <div className="legal connect py">
+            <div className="text">
+              <span>© 2018 DEVELOP BETTER. ALL RIGHTS RESERVED.</span>
+            </div>
+            <div className="connect">
+              <Link href="/agency">Bdev Group COMPANY</Link>
               <span> &nbsp; | &nbsp; </span>
-              <Link href='/terms-conditions'>TERMS & CONDITIONS</Link>
+              <Link href="/terms-conditions">TERMS & CONDITIONS</Link>
             </div>
           </div>
         </div>
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
