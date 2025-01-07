@@ -59,15 +59,15 @@ const Hero = () => {
       </section>
       <WhyChooseUs />
       <Expertise />
-      <Banner />
-      <Testimonial />
-      <ShowCase />
       <Brand />
+      <Banner />
+      {/* <Testimonial /> */}
+      {/* <ShowCase /> */}
 
-      <div className="text-center">
+      {/* <div className="text-center">
         <Title title="Latest news & articles" />
-      </div>
-      <BlogCard />
+      </div> */}
+      {/* <BlogCard /> */}
     </>
   );
 };

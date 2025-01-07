@@ -737,27 +737,27 @@ export const showcase = [
 export const brand = [
   {
     id: 1,
-    cover: "../images/l1.svg",
+    cover: "../images/brands/clarashades.png",
   },
   {
     id: 2,
-    cover: "../images/l2.svg",
+    cover: "../images/brands/elead.png",
   },
   {
     id: 3,
-    cover: "../images/l3.svg",
+    cover: "../images/brands/sportslatornade.png",
   },
   {
     id: 4,
-    cover: "../images/l4.svg",
+    cover: "../images/brands/tansempsychology.png",
   },
   {
     id: 5,
-    cover: "../images/l5.svg",
+    cover: "../images/brands/timebot.png",
   },
   {
     id: 6,
-    cover: "../images/l6.svg",
+    cover: "../images/brands/vienneagencement.png",
   },
 ];
 export const blogdata = [
